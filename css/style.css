@@ -7,6 +7,7 @@
 }
 body {
   font-family: poppinsregular;
+  width: 100%;
 }
 .logo {
   width: 100px;
@@ -258,21 +259,40 @@ ul {
 }
 
 /* responsividade */
-@media (min-width: 576px) {
+@media (min-width: 0px) and (max-width: 420px) {
   body {
-    width: 100%;
+    width: 100vw;
   }
   header {
-    width: 100%;
+    width: 100vw;
   }
   .navigation {
-    width: 200%;
-    height: auto;
+    position: absolute;
+    right: -100px;
+    top: 0px;
+    width: 150px;
   }
   #btn-contato {
     position: absolute;
-    right: -400px;
-    top: 45px;
+    right: -155px;
+    top: 40px;
+  }
+  .main-one h2{
+    width: 100%;
+    margin-left: 0px;
+  }
+  .main-one p{
+    width: 100%;
+    margin-left: 0px;
+  }
+  #txtcountries{
+    width: 100%;
+    margin-left: 0px;
+    padding-top: 0px;
+  }
+  .imgroupa{
+    width: 100px;
+    height: 100px;
   }
 }
 
